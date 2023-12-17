@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome",
+  "definitions": {
+    "Welcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "required": [
+        "data",
+        "message",
+        "status"
+      ],
+      "title": "Welcome"
+    },
+    "Data": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        },
+        "pagination": {
+          "$ref": "#/definitions/Pagination"
+        }
+      },
+      "required": [
+        "data",
+        "pagination"
+      ],
+      "title": "Data"
+    },
+    "Datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "categoryId": {
+          "type": "integer"
+        },
+        "creatorId": {
+          "type": "integer"
+        },
+        "creator": {
+          "$ref": "#/definitions/Creator"
+        },
+        "category": {
+          "$ref": "#/definitions/CategoryClass"
+        }
+      },
+      "required": [
+        "category",
+        "categoryId",
+        "creator",
+        "creatorId",
+        "description",
+        "id",
+        "name",
+        "price",
+        "status"
+      ],
+      "title": "Datum"
+    },
+    "CategoryClass": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "category": {
+          "$ref": "#/definitions/CategoryEnum"
+        },
+        "type": {
+          "$ref": "#/definitions/Type"
+        }
+      },
+      "required": [
+        "category",
+        "id",
+        "type"
+      ],
+      "title": "CategoryClass"
+    },
+    "Creator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "outletName": {
+          "$ref": "#/definitions/OutletName"
+        },
+        "email": {
+          "$ref": "#/definitions/Email"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "integer"
+        },
+        "roleId": {
+          "type": "integer"
+        },
+        "addressId": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "addressId",
+        "email",
+        "id",
+        "outletName",
+        "phoneNumber",
+        "roleId",
+        "userId"
+      ],
+      "title": "Creator"
+    },
+    "Pagination": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allPages": {
+          "type": "integer"
+        },
+        "currentPage": {
+          "type": "integer"
+        },
+        "nextPage": {
+          "type": "integer"
+        },
+        "prevPage": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "allPages",
+        "currentPage",
+        "nextPage",
+        "prevPage"
+      ],
+      "title": "Pagination"
+    },
+    "CategoryEnum": {
+      "type": "string",
+      "enum": [
+        "Clothes"
+      ],
+      "title": "CategoryEnum"
+    },
+    "Type": {
+      "type": "string",
+      "enum": [
+        "Product"
+      ],
+      "title": "Type"
+    },
+    "Email": {
+      "type": "string",
+      "enum": [
+        "test@gmail.com"
+      ],
+      "title": "Email"
+    },
+    "OutletName": {
+      "type": "string",
+      "enum": [
+        "tesst"
+      ],
+      "title": "OutletName"
+    },
+    "Status": {
+      "type": "string",
+      "enum": [
+        "active"
+      ],
+      "title": "Status"
+    }
+  }
+}
