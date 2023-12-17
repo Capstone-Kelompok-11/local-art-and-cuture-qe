@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Tambahkan Produk</name>
+   <tag></tag>
+   <elementGuidId>33a9d3ad-444f-4b01-a421-4ee1a1875901</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='logo-sidebar']/div/div/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>74831ce7-fdd5-4d67-9367-c20084ba3eb8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/adminumkm/tambahproduct</value>
+      <webElementGuid>274c2efe-f057-4f31-b5f3-fb0b327f38a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cursor-pointer flex items-center justify-center py-3 p-2 rounded-full text-white bg-[#768DD5]</value>
+      <webElementGuid>a6e470aa-2661-4ad6-8d1e-7e206fd7e14b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tambahkan Produk</value>
+      <webElementGuid>484edc80-2a6b-4ece-ac12-cf158d336b39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;logo-sidebar&quot;)/div[@class=&quot;h-screen px-3 py-3 overflow-y-auto bg-[#253E8D]&quot;]/div[@class=&quot;mx-2 mb-10&quot;]/a[@class=&quot;cursor-pointer flex items-center justify-center py-3 p-2 rounded-full text-white bg-[#768DD5]&quot;]</value>
+      <webElementGuid>b2df9cb7-6ac3-404b-b069-b6a8404d23b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='logo-sidebar']/div/div/a</value>
+      <webElementGuid>d1230195-b535-4144-8e87-0bcdbbe7b286</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Tambahkan Produk')]</value>
+      <webElementGuid>ae5755b6-5293-41f1-b88f-1d2aa204ef8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CREATOR.'])[1]/following::a[1]</value>
+      <webElementGuid>337ad399-0f5a-4e80-8339-c513d78069f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Open sidebar'])[1]/following::a[1]</value>
+      <webElementGuid>db562d1f-5199-4963-b7f1-ab8e3a2982ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/preceding::a[1]</value>
+      <webElementGuid>d7104e86-03b7-4770-830f-d941d5a4b9cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chat'])[1]/preceding::a[2]</value>
+      <webElementGuid>587317db-aabb-4466-85ee-23340aee8ac0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tambahkan Produk']/parent::*</value>
+      <webElementGuid>95cc5178-1358-40cd-ad91-9ec1bd5d0a00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/adminumkm/tambahproduct')]</value>
+      <webElementGuid>c868c92f-65e9-4b69-8ead-8e0f4d8ee0ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>93244eda-f61a-4a37-b2bd-36066d2ab09f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/adminumkm/tambahproduct' and (text() = 'Tambahkan Produk' or . = 'Tambahkan Produk')]</value>
+      <webElementGuid>07a43370-538e-48ab-8aef-6da7b897f8dd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
