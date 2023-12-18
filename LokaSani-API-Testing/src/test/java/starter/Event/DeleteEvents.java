@@ -19,12 +19,12 @@ public class DeleteEvents {
         SerenityRest.given().delete(setAPIForDeleteEventByValidID());
 
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .delete(setAPIForDeleteEventByValidID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .delete(setAPIForDeleteEventByValidID());
     }
 
 
@@ -38,12 +38,12 @@ public class DeleteEvents {
         SerenityRest.given().delete(setAPIForEventByInvalidID());
 
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .delete(setAPIForEventByInvalidID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .delete(setAPIForEventByInvalidID());
     }
 
 }

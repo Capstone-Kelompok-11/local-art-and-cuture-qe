@@ -13,17 +13,16 @@ public class BeforeRegisterHook {
         Faker faker = new Faker();
 
         String email = faker.internet().safeEmailAddress();
-//        String name = faker.name().name();
-//        String phoneNumber = faker.phoneNumber().phoneNumber();
+        String name = faker.name().name();
+        String phoneNumber = faker.phoneNumber().phoneNumber();
         String password = faker.internet().password(8, 12);
 
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("email", email);
-//        requestBody.put("name", name);
-//        requestBody.put("phone_number", phoneNumber);
+        requestBody.put("name", name);
+        requestBody.put("phone_number", phoneNumber);
         requestBody.put("password", password);
-
 
         String filePath = "src/test/resources/sample/user.json";
 
@@ -48,7 +47,7 @@ public class BeforeRegisterHook {
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("name", name);
-        requestBody.put("emaiil", emaiil);
+        requestBody.put("email", emaiil);
         requestBody.put("password", password);
         requestBody.put("phoneNumber", phoneNumber);
 

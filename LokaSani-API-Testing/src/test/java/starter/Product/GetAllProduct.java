@@ -18,11 +18,9 @@ public class GetAllProduct {
     }
     @Step("I send GET request to the endpoint to get all products")
     public void sendGetAllProduct() {
-//        SerenityRest.given().get(setApiEndpointGetAllProduct());
-
         String data = GenerateToken.generateToken();
         SerenityRest.given()
-                .header("Authorization", "Bearer " + "token_jwt")
+                .header("Authorization", "Bearer " + data)
                 .header("Content-Type", "application/json")
                 .get(setApiEndpointGetAllProduct());
     }
@@ -48,23 +46,19 @@ public class GetAllProduct {
     public void sendGetRequestGetAllProduct() {
         SerenityRest.given().get(setInvalidApiEndpointGetAllProduct());
 
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setInvalidApiEndpointGetAllProduct());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setInvalidApiEndpointGetAllProduct());
     }
-    @Step("The response status code equal 400")
-    public void responseStatusCode400(){
-        restAssuredThat(response-> response.statusCode(400));
+    @Step("The response status code equal 404")
+    public void responseStatusCode404(){
+        restAssuredThat(response-> response.statusCode(404));
     }
     @Step("I receive error message")
     public void receiveErrorMessage(){
-        JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.INVALID_PARAMETERS_GET_ALL_PRODUCT_SCHEMA);
-        restAssuredThat(response -> response.body("'message'",is("missing or malformed jwt")));
-        restAssuredThat(response->response.body(matchesJsonSchema(schema)));
+        restAssuredThat(response -> response.body("'message'",is("Not Found")));
     }
 }

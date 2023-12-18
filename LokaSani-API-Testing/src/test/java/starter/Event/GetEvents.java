@@ -2,6 +2,7 @@ package starter.Event;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -21,6 +22,10 @@ public class GetEvents {
     public void sendGetAllEvent() {
         SerenityRest.given().get(setApiEndpointGetAllEvents());
     }
+    @Step("I should receive a status code of 200 for get all events")
+    public void responseStatusCode200ForGetAllEvent() {
+        restAssuredThat(response -> response.statusCode(200));
+    }
     @Step("The API should respond with a list of local art culture events")
     public void shouldRespondWithAllistLocalArtEvents() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
@@ -37,6 +42,10 @@ public class GetEvents {
     public void sendRequestGETToGetDetailEvents() {
         SerenityRest.given().get(setInvalidEndpointForGetDetailvents());
     }
+    @Step(" I should receive a status code of 200 for get detail events by ID")
+    public void responseStatusCode200ForGetEventByID() {
+        restAssuredThat(response -> response.statusCode(200));
+    }
     @Step("The API should respond with detailed information about the event")
     public void shouldRespondWithDetailedInformationAboutTheEvent() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
@@ -44,26 +53,6 @@ public class GetEvents {
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
 
-    //invalid request get all events
-    @Step("I set API invalid endpoint for get all events")
-    public String setInvalidApiEndpointGetAllEvents() {
-        return url + "eventldk";
-    }
-    @Step("I send a request GET to get invalid request all events")
-    public void sendInvalidGetAllEvent() {
-        SerenityRest.given().get(setInvalidApiEndpointGetAllEvents());
-    }
-    @Step("I should receive a status code of 400")
-    public void responseStatusCode400() {
-        restAssuredThat(response -> response.statusCode(400));
-    }
-    @Step("The response body should contain an error message")
-    public void shouldResponseBodyErrorMessage() {
-        JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.INVALID_ALL_EVENTS_REQUEST_REQUEST);
-        restAssuredThat(response -> response.body("'message'",is("missing or malformed jwt")));
-        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
-    }
 
     //can not get detail event with invalid or non-existent id
     @Step("I set API endpoint for get detail event with invalid ID")

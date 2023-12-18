@@ -2,6 +2,7 @@ package starter.Tickets;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -21,12 +22,12 @@ public class GetTickets {
     public void sendGetAllTicket() {
         SerenityRest.given().get(setApiEndpointGetAllTickets());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setApiEndpointGetAllTickets());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setApiEndpointGetAllTickets());
     }
 
     @Step("The API should respond with a list of tickets")
@@ -46,12 +47,12 @@ public class GetTickets {
     public void sendGetTicketByID() {
         SerenityRest.given().get(setApiEndpointGetTicketByID());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setApiEndpointGetTicketByID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setApiEndpointGetTicketByID());
     }
 
     @Step("The API should respond with a list of tickets to get tickets by valid ID")
@@ -73,12 +74,12 @@ public class GetTickets {
     public void sendGetTicketBasedOnVIP() {
         SerenityRest.given().get(setApiEndpointGetTicketBasedOnVIP());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setApiEndpointGetTicketBasedOnVIP());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setApiEndpointGetTicketBasedOnVIP());
     }
 
     @Step("The API should respond with a list of tickets to get tickets based on VIP")
@@ -99,12 +100,12 @@ public class GetTickets {
     public void sendGetTicketBasedOnREGULER() {
         SerenityRest.given().get(setApiEndpointGetTicketBasedOnReguler());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setApiEndpointGetTicketBasedOnReguler());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setApiEndpointGetTicketBasedOnReguler());
     }
     @Step("The API should respond with a list of tickets to get tickets based on Reguler")
     public void shouldRespondWithTicketBasedOnReguler() {
@@ -122,12 +123,12 @@ public class GetTickets {
     public void sendGetTicketWithInvalidID() {
         SerenityRest.given().get(setApiEndpointGetTicketWithInvalidID());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setApiEndpointGetTicketWithInvalidID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setApiEndpointGetTicketWithInvalidID());
     }
 
     // Can not get tickets with invalid endpoint API
@@ -139,12 +140,12 @@ public class GetTickets {
     public void sendGetTicketWithInvalidEndpointAPI() {
         SerenityRest.given().get(setInvalidApiEndpointForGetTicket());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .get(setInvalidApiEndpointForGetTicket());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .get(setInvalidApiEndpointForGetTicket());
     }
 
 }

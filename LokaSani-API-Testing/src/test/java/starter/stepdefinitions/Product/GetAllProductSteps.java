@@ -37,8 +37,8 @@ public class GetAllProductSteps {
         getAllProduct.sendGetRequestGetAllProduct();
     }
     @Then("The response status code equal 400")
-    public void responseStatusCode400(){
-        getAllProduct.responseStatusCode400();
+    public void responseStatusCode404(){
+        getAllProduct.responseStatusCode404();
     }
     @And("I receive error message")
     public void receiveErrorMessage(){

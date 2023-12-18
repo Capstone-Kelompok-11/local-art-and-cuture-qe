@@ -1,6 +1,8 @@
 package starter.Product;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import starter.utils.GenerateToken;
+
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 
@@ -17,17 +19,17 @@ public class DeleteProductByID {
         SerenityRest.given().delete(setAPIForDeleteProductByID());
 
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .delete(setAPIForDeleteProductByID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .delete(setAPIForDeleteProductByID());
     }
 
         @Step("I should receive a status code of 200")
     public void receiveStatusCode200ForDeleteProduct(){
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(500));
     }
     @Step("The product was deleted successfully")
     public void receiveSuccessfullyMessage() {

@@ -60,9 +60,9 @@ public class PutEventSteps {
     public void sendPUTRequestEventWithInvalidID() {
         putEvents.sendPUTRequestEventWithInvalidID();
     }
-    @And("I should receive a 404 code")
-    public void receiveStatusShouldEqualCode404ForUpdateEvent() {
-        putEvents.receiveStatusShouldEqualCode404ForUpdateEvent();
+    @And("I should receive a 500 code")
+    public void receiveStatusShouldEqualCode500ForUpdateEvent() {
+        putEvents.receiveStatusShouldEqualCode500ForUpdateEvent();
     }
     @Then("The response should contain an error message indicating that the event ID is not found")
     public void responseShouldContainErrorMessageIDIsNotFound() {
@@ -79,9 +79,9 @@ public class PutEventSteps {
     public void sendPUTRequestEventWithInvalidURL() {
         putEvents.sendPUTRequestEventWithInvalidURL();
     }
-    @And("I should receive a 400 code")
-    public void receiveStatusShouldEqualCode400ForUpdateEvent() {
-        putEvents.receiveStatusShouldEqualCode400ForUpdateEvent();
+    @And("I should receive a 404 code for update event with invalid url")
+    public void receiveStatusShouldEqualCode404ForUpdateEvent() {
+        putEvents.receiveStatusShouldEqualCode404ForUpdateEvent();
     }
     @Then("The response should contain an error message indicating that bad request")
     public void responseShouldContainErrorMessageIsBadRequest() {

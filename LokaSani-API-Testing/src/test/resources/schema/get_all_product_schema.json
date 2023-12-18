@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$ref": "#/definitions/Welcome",
+  "$ref": "#/definitions/Response",
   "definitions": {
-    "Welcome": {
+    "Response": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -21,16 +21,16 @@
         "message",
         "status"
       ],
-      "title": "Welcome"
+      "title": "Response"
     },
     "Data": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "data": {
+        "allProduct": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Datum"
+            "$ref": "#/definitions/AllProduct"
           }
         },
         "pagination": {
@@ -38,12 +38,12 @@
         }
       },
       "required": [
-        "data",
+        "allProduct",
         "pagination"
       ],
       "title": "Data"
     },
-    "Datum": {
+    "AllProduct": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -52,6 +52,9 @@
         },
         "name": {
           "type": "string"
+        },
+        "stock": {
+          "type": "boolean"
         },
         "price": {
           "type": "integer"
@@ -62,10 +65,13 @@
         "status": {
           "$ref": "#/definitions/Status"
         },
-        "categoryId": {
+        "total_product": {
           "type": "integer"
         },
-        "creatorId": {
+        "category_id": {
+          "type": "integer"
+        },
+        "creator_id": {
           "type": "integer"
         },
         "creator": {
@@ -77,16 +83,18 @@
       },
       "required": [
         "category",
-        "categoryId",
+        "category_id",
         "creator",
-        "creatorId",
+        "creator_id",
         "description",
         "id",
         "name",
         "price",
-        "status"
+        "status",
+        "stock",
+        "total_product"
       ],
-      "title": "Datum"
+      "title": "AllProduct"
     },
     "CategoryClass": {
       "type": "object",
@@ -116,33 +124,33 @@
         "id": {
           "type": "integer"
         },
-        "outletName": {
+        "outlet_name": {
           "$ref": "#/definitions/OutletName"
         },
         "email": {
           "$ref": "#/definitions/Email"
         },
-        "phoneNumber": {
+        "phone_number": {
           "type": "string"
         },
-        "userId": {
+        "user_id": {
           "type": "integer"
         },
-        "roleId": {
-          "type": "integer"
-        },
-        "addressId": {
+        "address_id": {
           "type": "null"
+        },
+        "address": {
+          "type": "string"
         }
       },
       "required": [
-        "addressId",
+        "address",
+        "address_id",
         "email",
         "id",
-        "outletName",
-        "phoneNumber",
-        "roleId",
-        "userId"
+        "outlet_name",
+        "phone_number",
+        "user_id"
       ],
       "title": "Creator"
     },

@@ -3,6 +3,7 @@ package starter.Tickets;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -22,6 +23,8 @@ public class PutTickets {
     @Step("I send a request PUT request to update tickets with valid ID")
     public void sendPUTRequestUpdateTicketWithValidID(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
+
         requestBody.put("'data'.'type'", "Regular");
         requestBody.put("'data'.'price'", 300000);
         requestBody.put("'data'.'qty'", 500);
@@ -29,6 +32,7 @@ public class PutTickets {
         requestBody.put("'data'.'description'", "this is band noah");
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateTicketAvailable());
         //generate token
@@ -57,18 +61,14 @@ public class PutTickets {
     @Step("I send a request PUT request to quantity tickets")
     public void sendPUTRequestUpdateTicketWithQuantityTickets(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'qty'", 500);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateTicketAvailable());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateTicketAvailable());
+
     }
     @Step("The response should contain of the updated event with the changed quantity tickets")
     public void receiveValidDataForUpdateTicketWithQuantityTicket() {
@@ -84,10 +84,12 @@ public class PutTickets {
     @Step("I send a request PUT request to date tickets")
     public void sendPUTRequestUpdateTicketWithDateTickets(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'startTime'", "0001-01-01T00:00:00ZZ");
         requestBody.put("'data'.'endTime'", "0001-01-01T00:00:00Z");
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateTicketAvailable());
         //generate token
@@ -117,12 +119,12 @@ public class PutTickets {
     public void sendPUTRequestUpdateTicketWithInvalidID(){
         SerenityRest.given().put(setAPIForUpdateTicketWithInvalidID());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateTicketWithInvalidID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setAPIForUpdateTicketWithInvalidID());
     }
     @Step("I should receive an error message indicating that the tickets was not found")
     public void receiveMessageErrorInvalidIDUpdateTicket() {
@@ -142,12 +144,12 @@ public class PutTickets {
     public void sendPUTRequestUpdateTicketWithInvalidEndpoint(){
         SerenityRest.given().put(setInvalidAPIForUpdateTicket());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setInvalidAPIForUpdateTicket());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setInvalidAPIForUpdateTicket());
     }
     @Step("I should receive an error message indicating that bad request")
     public void receiveMessageErrorThatBadRequest() {
