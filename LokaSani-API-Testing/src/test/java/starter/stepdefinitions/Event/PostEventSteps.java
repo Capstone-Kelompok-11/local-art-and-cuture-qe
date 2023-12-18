@@ -20,6 +20,9 @@ public class PostEventSteps {
     @When("I send a request POST to create a new event with valid inputs")
     public void sendPOSTRequestForCreateNewEvent() {
         postEvents.sendPOSTRequestForCreateNewEvent();
+    } @And("I should receive a status code of 400")
+    public void responseStatusCode400() {
+        postEvents.responseStatusCode400();
     }
     @Then("I should receive the details of the newly created event")
     public void receiveValidDataForCreateNewEvent() {

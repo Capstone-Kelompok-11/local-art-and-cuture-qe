@@ -3,6 +3,7 @@ package starter.Tickets;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -22,6 +23,7 @@ public class PostTickets {
     //Successfully create a new ticket with valid inputs
     @Step("I send a request POST to create a new ticket with valid inputs")
     public void sendPOSTRequestForCreateNewTicket() {
+        String data = GenerateToken.generateToken();
         JSONObject requestBody = new JSONObject();
         requestBody.put("type", "REGULER");
         requestBody.put("price", 50000);
@@ -34,16 +36,10 @@ public class PostTickets {
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewTicket());
 
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .post(setAPIForCreateNewTicket());
     }
     @Step("I should receive the details of the newly created ticket")
     public void receiveValidDataForCreateNewTicket() {
@@ -100,6 +96,8 @@ public class PostTickets {
     @Step("I send a request POST to create a new ticket with missing required fields")
     public void sendPOSTRequestForCreateNewTicketWithMissingRequiredFields() {
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
+
         requestBody.put("type", "REGULER");
         requestBody.put("price", 50000);
         requestBody.put("qty", 500);
@@ -111,15 +109,10 @@ public class PostTickets {
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewTicket());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .post(setAPIForCreateNewTicket());
+
     }
     @Step("I should receive message error from missing required fields")
     public void receiveMessageErrorMissingFieldsCreateTicket() {
@@ -142,6 +135,8 @@ public class PostTickets {
     @Step("I send a request POST to create a new ticket with negative quantity")
     public void sendPOSTRequestForCreateNewTicketWithNegativeQuantity() {
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
+
         requestBody.put("type", "REGULER");
         requestBody.put("price", -50000);
         requestBody.put("qty", 500);
@@ -153,15 +148,10 @@ public class PostTickets {
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewTicket());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .post(setAPIForCreateNewTicket());
+
     }
     @Step("I should receive message error from negative quantity")
     public void receiveMessageErrorMissingFieldsCreateTicketFromNegativeQuantity() {

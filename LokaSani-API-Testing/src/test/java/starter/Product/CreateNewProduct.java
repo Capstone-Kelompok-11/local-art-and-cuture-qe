@@ -3,6 +3,7 @@ package starter.Product;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -23,6 +24,7 @@ public class CreateNewProduct {
     @Step("I send a request POST to create a new product with valid inputs")
     public void sendPOSTRequestForCreateNewProduct() {
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
 //        requestBody.put("'data'.'id'", 17);
 
         requestBody.put("name", "Kain Batik Anyaman");
@@ -34,16 +36,10 @@ public class CreateNewProduct {
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewProduct());
 
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .post(setAPIForCreateNewProduct());
     }
 
     @Step("I should receive the details of the newly created product")
@@ -65,6 +61,7 @@ public class CreateNewProduct {
     @Step("I send a request to create a new product with duplicate fields")
     public void sendDuplicatePOSTRequestForCreateNewProduct() {
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'name'", "Tas Kerajinan Tangan");
         requestBody.put("'data'.'price'", 250000);
         requestBody.put("'data'.'description'", "Tas batik");
@@ -74,16 +71,9 @@ public class CreateNewProduct {
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewProduct());
-
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .post(setAPIForCreateNewProduct());
     }
 
     @Step("I should receive a status code of 500")

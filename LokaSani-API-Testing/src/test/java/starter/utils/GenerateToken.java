@@ -18,15 +18,10 @@ public class GenerateToken {
                 .post("https://lokasani.my.id/admin/login")
                 .body();
 
-//        JSONObject loginResponseBody = new JSONObject(loginResponse.asString());
-        JSONObject loginResponseBody = new JSONObject(loginResponse);
-        JSONObject data = loginResponseBody.getJSONObject("data");
-        return data.getString("token");
+        JSONObject loginResponseBody = new JSONObject(loginResponse.asString());
 
-//        return loginResponseBody.getJSONObject("data").getString("token");
+        JSONObject responseData = loginResponseBody.getJSONObject("data");
 
-//        return loginResponseBody.get("token").toString();
-
+        return responseData.get("token").toString();
     }
-
 }

@@ -19,6 +19,10 @@ public class GetProductByID{
     public void sendGetRequestForGetProductByID() {
         SerenityRest.given().get(setAPIForGetProductByID());
     }
+    @Step("I should receive a status code of 200 for get a product by ID")
+    public void receiveStatusShouldEqualCode200ForGetProductByID() {
+        restAssuredThat(response -> response.statusCode(200));
+    }
    @Step("I should receive the details of the product associated with the provided ID")
     public void receiveDetailGetProduct() {
        JsonSchemaHelper helper = new JsonSchemaHelper();

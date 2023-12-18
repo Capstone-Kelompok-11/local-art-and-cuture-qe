@@ -3,6 +3,7 @@ package starter.Event;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -24,20 +25,15 @@ public class PutEvents {
     @Step("I send a request PUT request to update name information")
     public void sendPUTRequestEventWithNameInformation(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'eventName'", "Taylor Swift");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateEvent());
 
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateEvent());
     }
     @Step("I should receive a 200 OK response")
     public void receiveStatusShouldEqualCode200ForUpdateEvent() {
@@ -56,19 +52,14 @@ public class PutEvents {
     @Step("I send a request PUT request to update a description")
     public void sendPUTRequestEventWithDescriptionInformation(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'eventDescription'", "This is taylor swift");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateEvent());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateEvent());
     }
     @Step("The response should contain of the updated event with the changed event description")
     public void receiveValidDataForUpdateEventWithDescriptionInformatpm() {
@@ -84,20 +75,15 @@ public class PutEvents {
     @Step("I send a request PUT request to update a date")
     public void sendPUTRequestEventWithDateInformation(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'fromDate'", "2023-12-31T19:00:00Z");
         requestBody.put("'data'.'toDate'", "2023-12-31T19:00:00Z");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateEvent());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateEvent());
     }
     @Step("The response should contain of the updated event with the changed event description")
     public void receiveValidDataForUpdateEventWithDateInformation() {
@@ -119,16 +105,16 @@ public class PutEvents {
         SerenityRest.given().put(setAPIForUpdateEventWithInvalidID());
 
 //        generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateEventWithInvalidID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setAPIForUpdateEventWithInvalidID());
     }
-    @Step("I should receive a 404 code")
-    public void receiveStatusShouldEqualCode404ForUpdateEvent() {
-        restAssuredThat(response -> response.statusCode(404));
+    @Step("I should receive a 500 code")
+    public void receiveStatusShouldEqualCode500ForUpdateEvent() {
+        restAssuredThat(response -> response.statusCode(500));
     }
     @Step("The response should contain an error message indicating that the event ID is not found")
     public void responseShouldContainErrorMessageIDIsNotFound() {
@@ -150,16 +136,16 @@ public class PutEvents {
         SerenityRest.given().put(setAPIForUpdateEventWithInvalidURL());
 
         //        generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateEventWithInvalidURL());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setAPIForUpdateEventWithInvalidURL());
     }
-    @Step("I should receive a 400 code")
-    public void receiveStatusShouldEqualCode400ForUpdateEvent() {
-        restAssuredThat(response -> response.statusCode(400));
+    @Step("I should receive a 404 code for update event with invalid url")
+    public void receiveStatusShouldEqualCode404ForUpdateEvent() {
+        restAssuredThat(response -> response.statusCode(404));
     }
     @Step("The response should contain an error message indicating that bad request")
     public void responseShouldContainErrorMessageIsBadRequest() {

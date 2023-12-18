@@ -3,6 +3,7 @@ package starter.Product;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.GenerateToken;
 import starter.utils.JsonSchema;
 import starter.utils.JsonSchemaHelper;
 
@@ -23,20 +24,14 @@ public class UpdateProduct {
     @Step("I send request PUT to update product with name only")
     public void sendPUTRequestWithNameOnly(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'name'", "Tas Batek");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateProduct());
-
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateProduct());
     }
     @Step("The response status code should be 200 (OK)")
     public void receiveStatusShouldEqualCode200() {
@@ -56,20 +51,14 @@ public class UpdateProduct {
     @Step("I send request PUT to update product with price only")
     public void sendPUTRequestWithPriceOnly(){
         JSONObject requestBody = new JSONObject();
+        String data = GenerateToken.generateToken();
         requestBody.put("'data'.'price'", 350000);
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateProduct());
-
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateProduct());
     }
     @Step("The response should contain the details of the updated product with the changed name")
     public void receiveValidDataForUpdateProductWithPriceOnly() {
@@ -92,12 +81,12 @@ public class UpdateProduct {
                 .put(setAPIForUpdateProduct());
 
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateProduct());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setAPIForUpdateProduct());
     }
     @Step("The response should contain the details of the updated product with the changed description")
     public void receiveValidDataForUpdateProductWithDescriptionOnly() {
@@ -117,12 +106,12 @@ public class UpdateProduct {
     public void sendInvalidRequestUpdateProduct(){
         SerenityRest.given().put(setInvalidAPIEndpointUpdateProduct());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setInvalidAPIEndpointUpdateProduct());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setInvalidAPIEndpointUpdateProduct());
     }
     @Step("The response status code should be 404 (Not Found)")
     public void receiveStatusCode404InUpdateProduct(){
@@ -145,12 +134,12 @@ public class UpdateProduct {
     public void sendInvalidRequestUpdateProductWithEmptyID(){
         SerenityRest.given().put(setInvalidAPIEndpointUpdateProductWIthEmptyID());
         //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setInvalidAPIEndpointUpdateProductWIthEmptyID());
+        String data = GenerateToken.generateToken();
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + data)
+                .put(setInvalidAPIEndpointUpdateProductWIthEmptyID());
     }
     @Step("The response status code should be 405 (Method Not Allowed)")
     public void receiveStatusCode405InUpdateProduct(){
