@@ -1,5 +1,6 @@
 package starter.stepdefinitions.Tickets;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -30,7 +31,10 @@ public class PostTicketSteps {
     public void sendPOSTRequestForCreateNewTicketWithMissingRequiredFields() {
         postTickets.sendPOSTRequestForCreateNewTicketWithMissingRequiredFields();
     }
-    @Then("I should receive message error from missing required fields")
+    @And("I should receive a status code of 400 for missing required fields")
+    public void receiveStatusCode400ForMissingRequiredFields() {
+        postTickets.receiveStatusCode400ForMissingRequiredFields();
+    }   @Then("I should receive message error from missing required fields")
     public void receiveMessageErrorMissingFieldsCreateTicket() {
         postTickets.receiveMessageErrorMissingFieldsCreateTicket();
     }
@@ -41,7 +45,10 @@ public class PostTicketSteps {
     public void sendPOSTRequestForCreateNewTicketWithNegativeQuantity() {
         postTickets.sendPOSTRequestForCreateNewTicketWithNegativeQuantity();
     }
-    @Then("I should receive message error from negative quantity")
+    @And("I should receive a status code of 400 for negative quantity")
+    public void receiveStatusCode400ForNegativeQuantity() {
+        postTickets.receiveStatusCode400ForNegativeQuantity();
+    }@Then("I should receive message error from negative quantity")
     public void receiveMessageErrorMissingFieldsCreateTicketFromNegativeQuantity() {
         postTickets.receiveMessageErrorMissingFieldsCreateTicketFromNegativeQuantity();
     }

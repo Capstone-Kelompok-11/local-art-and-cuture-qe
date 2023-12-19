@@ -57,39 +57,7 @@ public class PostTickets {
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
 
-//    //Successfully create a new ticket with future event date
-//    @Step("I send a request POST to create a new ticket with future event date")
-//    public void sendPOSTRequestForCreateNewTicketWithFutureEventDate() {
-//        JSONObject requestBody = new JSONObject();
-//        requestBody.put("type", "REGULER");
-//        requestBody.put("price", 50000);
-//        requestBody.put("qty", 500);
-//        requestBody.put("name", "JKT48");
-//        requestBody.put("description", "konser jkt48");
-//        requestBody.put("startTime", "2023-12-31T12:00:00Z");
-//        requestBody.put("endTime", "2023-12-31T12:00:00Z");
-//        requestBody.put("eventId", 2);
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .body(requestBody.toString())
-//                .post(setAPIForCreateNewTicket());
-//    }
-//    @Step("I should receive the details of the newly created ticket")
-//    public void receiveValidDataForCreateNewTicket() {
-//        JsonSchemaHelper helper = new JsonSchemaHelper();
-//        String schema = helper.getResponseSchema(JsonSchema.CREATE_NEW_TICKET_SCHEMA);
-//        restAssuredThat(response -> response.body("'data'.'type'", equalTo("REGULER")));
-//        restAssuredThat(response -> response.body("'data'.'price'", equalTo(50000)));
-//        restAssuredThat(response -> response.body("'data'.'qty'", equalTo(500)));
-//        restAssuredThat(response -> response.body("'data'.'name'", equalTo("JKT48")));
-//        restAssuredThat(response -> response.body("'data'.'description'", equalTo("konser jkt48")));
-//        restAssuredThat(response -> response.body("'data'.'startTime'", equalTo("2023-12-31T12:00:00Z")));
-//        restAssuredThat(response -> response.body("'data'.'endTime'", equalTo("2023-12-31T12:00:00Z")));
-//        restAssuredThat(response -> response.body("'data'.'eventId'", equalTo(2)));
-//
-//        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
-//    }
+
 
 
 //Can not create new ticket with missing required fields(date)
@@ -113,6 +81,10 @@ public class PostTickets {
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewTicket());
 
+    }
+    @Step("I should receive a status code of 400 for missing required fields")
+    public void receiveStatusCode400ForMissingRequiredFields() {
+        restAssuredThat(response -> response.statusCode(400));
     }
     @Step("I should receive message error from missing required fields")
     public void receiveMessageErrorMissingFieldsCreateTicket() {
@@ -152,6 +124,10 @@ public class PostTickets {
                 .body(requestBody.toString())
                 .post(setAPIForCreateNewTicket());
 
+    }
+    @Step("I should receive a status code of 400 for negative quantity")
+    public void receiveStatusCode400ForNegativeQuantity() {
+        restAssuredThat(response -> response.statusCode(400));
     }
     @Step("I should receive message error from negative quantity")
     public void receiveMessageErrorMissingFieldsCreateTicketFromNegativeQuantity() {

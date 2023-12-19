@@ -29,6 +29,10 @@ public class GetTickets {
                 .header("Authorization", "Bearer " + data)
                 .get(setApiEndpointGetAllTickets());
     }
+    @Step("I should receive a status code of 200 for get ticket")
+    public void responseStatusCode200ForGetTicket(){
+        restAssuredThat(response-> response.statusCode(200));
+    }
 
     @Step("The API should respond with a list of tickets")
     public void shouldRespondWithAllistLocalArtTickets() {
@@ -134,7 +138,7 @@ public class GetTickets {
     // Can not get tickets with invalid endpoint API
     @Step("I set invalid API endpoint for get tickets")
     public String setInvalidApiEndpointForGetTicket() {
-        return url + "ticket";
+        return url + "tickets/";
     }
     @Step("I send a request GET request with invalid endpoint")
     public void sendGetTicketWithInvalidEndpointAPI() {

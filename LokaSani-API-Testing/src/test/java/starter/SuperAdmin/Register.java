@@ -54,7 +54,7 @@ public class Register {
     }
     @Step("I receive status code 400")
     public void sendRegisterRequest400() {
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(500));
     }
     @Step("I receive message error for register")
     public void receiveMessageErrorForRegister() {

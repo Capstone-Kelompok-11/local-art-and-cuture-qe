@@ -84,9 +84,9 @@ public class UpdateProductSteps {
     public void receiveStatusCode405InUpdateProduct() {
         updateProduct.receiveStatusCode405InUpdateProduct();
     }
-   @And("The response should contain an error message indicating that the update data is not allowed")
-    public void responseUpdateProductNotAllowed() {
-        updateProduct.responseUpdateProductNotAllowed();
+   @And("The response should contain an error message indicating that the update data is not found")
+    public void responseUpdateProductNotFound() {
+        updateProduct.responseUpdateProductNotFound();
     }
 
 

@@ -35,13 +35,6 @@ public class PutTickets {
                 .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .put(setAPIForUpdateTicketAvailable());
-        //generate token
-//        String data = GenerateToken.generateToken();
-//
-//        SerenityRest.given()
-//                .header("Content-Type", "application/json")
-//                .header("Authorization", "Bearer " + data)
-//                .put(setAPIForUpdateTicketAvailable());
     }
     @Step("The response should contain of the updated detail tickets")
     public void receiveValidDataForUpdateTicketWithValidID() {
@@ -151,11 +144,15 @@ public class PutTickets {
                 .header("Authorization", "Bearer " + data)
                 .put(setInvalidAPIForUpdateTicket());
     }
-    @Step("I should receive an error message indicating that bad request")
-    public void receiveMessageErrorThatBadRequest() {
+    @Step("I should receive a status code of 404 for update ticket")
+    public void receiveStatusCode404ForUpdateTicket() {
+        restAssuredThat(response -> response.statusCode(404));
+    }
+    @Step("I should receive an error message indicating that not found")
+    public void receiveMessageErrorThatNotFound() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
         String schema = helper.getResponseSchema(JsonSchema.INVALID_ENDPOINT_UPDATE_TICKET_SCHEMA);
-        restAssuredThat(response -> response.body("'message'",is("missing or malformed jwt")));
+        restAssuredThat(response -> response.body("'message'",is("Not Found")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
 }

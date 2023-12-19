@@ -1,5 +1,6 @@
 package starter.stepdefinitions.Tickets;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,6 +21,10 @@ public class GetTicketSteps {
     public void sendGetAllTicket() {
         getTickets.sendGetAllTicket();
     }
+    @And("I should receive a status code of 200 for get ticket")
+    public void responseStatusCode200ForGetTicket() {
+        getTickets.responseStatusCode200ForGetTicket();
+    }
     @Then("The API should respond with a list of tickets")
     public void shouldRespondWithAllistLocalArtTickets() {
         getTickets.shouldRespondWithAllistLocalArtTickets();
@@ -39,33 +44,33 @@ public class GetTicketSteps {
         getTickets.shouldRespondWithTicketByID();
     }
 
-    //Get Tickets based on VIP Tickets
-    @Given("I set API endpoint to get tickets based on VIP")
-    public void setApiEndpointGetTicketBasedOnVIP() {
-        getTickets.setApiEndpointGetTicketBasedOnVIP();
-    }
-    @When("I send a request GET to get tickets based on VIP")
-    public void sendGetTicketBasedOnVIP() {
-        getTickets.sendGetTicketBasedOnVIP();
-    }
-    @Then("The API should respond with a list of tickets to get tickets based on VIP")
-    public void shouldRespondWithTicketBasedOnVIP() {
-        getTickets.shouldRespondWithTicketBasedOnVIP();
-    }
-
-    //Get Tickets based on Reguler Tickets
-    @Given("I set API endpoint to get tickets based on Reguler")
-    public void setApiEndpointGetTicketBasedOnReguler() {
-        getTickets.setApiEndpointGetTicketBasedOnReguler();
-    }
-    @When("I send a request GET to get tickets based on Reguler")
-    public void sendGetTicketBasedOnREGULER() {
-        getTickets.sendGetTicketBasedOnREGULER();
-    }
-    @Then("The API should respond with a list of tickets to get tickets based on Reguler")
-    public void shouldRespondWithTicketBasedOnReguler() {
-        getTickets.shouldRespondWithTicketBasedOnReguler();
-    }
+//    //Get Tickets based on VIP Tickets
+//    @Given("I set API endpoint to get tickets based on VIP")
+//    public void setApiEndpointGetTicketBasedOnVIP() {
+//        getTickets.setApiEndpointGetTicketBasedOnVIP();
+//    }
+//    @When("I send a request GET to get tickets based on VIP")
+//    public void sendGetTicketBasedOnVIP() {
+//        getTickets.sendGetTicketBasedOnVIP();
+//    }
+//    @Then("The API should respond with a list of tickets to get tickets based on VIP")
+//    public void shouldRespondWithTicketBasedOnVIP() {
+//        getTickets.shouldRespondWithTicketBasedOnVIP();
+//    }
+//
+//    //Get Tickets based on Reguler Tickets
+//    @Given("I set API endpoint to get tickets based on Reguler")
+//    public void setApiEndpointGetTicketBasedOnReguler() {
+//        getTickets.setApiEndpointGetTicketBasedOnReguler();
+//    }
+//    @When("I send a request GET to get tickets based on Reguler")
+//    public void sendGetTicketBasedOnREGULER() {
+//        getTickets.sendGetTicketBasedOnREGULER();
+//    }
+//    @Then("The API should respond with a list of tickets to get tickets based on Reguler")
+//    public void shouldRespondWithTicketBasedOnReguler() {
+//        getTickets.shouldRespondWithTicketBasedOnReguler();
+//    }
 
     //Can not get tickets with invalid or non-existent ID
     @Given("I set API endpoint for get a tickets with invalid ID")

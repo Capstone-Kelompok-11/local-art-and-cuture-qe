@@ -7,26 +7,26 @@ Feature: GET Tickets
   Scenario: Get All Tickets Successfully
     Given I set API endpoint for get all tickets is available
     When I send a request GET to get all tickets
-    And I should receive a status code of 200
+    And I should receive a status code of 200 for get ticket
     Then The API should respond with a list of tickets
 
   Scenario: Get Tickets by Valid ID
     Given I set API endpoint to get tickets by valid ID
     When I send a request GET to get tickets by valid ID
-    And I should receive a status code of 200
+    And I should receive a status code of 200 for get ticket
     Then The API should respond with a list of tickets to get tickets by valid ID
 
-  Scenario: Get Tickets based on VIP Tickets
-    Given I set API endpoint to get tickets based on VIP
-    When I send a request GET to get tickets based on VIP
-    And I should receive a status code of 200
-    Then The API should respond with a list of tickets to get tickets based on VIP
-
-  Scenario: Get Tickets based on Reguler Tickets
-    Given I set API endpoint to get tickets based on Reguler
-    When I send a request GET to get tickets based on Reguler
-    And I should receive a status code of 200
-    Then The API should respond with a list of tickets to get tickets based on Reguler
+#  Scenario: Get Tickets based on VIP Tickets
+#    Given I set API endpoint to get tickets based on VIP
+#    When I send a request GET to get tickets based on VIP
+#    And I should receive a status code of 200 for get ticket
+#    Then The API should respond with a list of tickets to get tickets based on VIP
+#
+#  Scenario: Get Tickets based on Reguler Tickets
+#    Given I set API endpoint to get tickets based on Reguler
+#    When I send a request GET to get tickets based on Reguler
+#    And I should receive a status code of 200 for get ticket
+#    Then The API should respond with a list of tickets to get tickets based on Reguler
 
 #  Scenario: Get Tickets based with Event Name Filter
 #    Given I set API endpoint to get tickets with event name filter

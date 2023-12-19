@@ -145,8 +145,9 @@ public class UpdateProduct {
     public void receiveStatusCode405InUpdateProduct(){
         restAssuredThat(response -> response.statusCode(405));
     }
-    @Step("The response should contain an error message indicating that the update data is not allowed")
-    public void responseUpdateProductNotAllowed(){
-        System.out.println("Method Not Allowed");
+    @Step("The response should contain an error message indicating that the update data is not found")
+    public void responseUpdateProductNotFound(){
+        System.out.println("Not Found");
     }
 }
+

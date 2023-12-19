@@ -65,7 +65,7 @@ public class GetEvents {
     }
     @Step("I should receive a status code of 404 for invalid ID")
     public void responseStatusCode404ForNonExistentID() {
-        restAssuredThat(response -> response.statusCode(500));
+        restAssuredThat(response -> response.statusCode(404));
     }
     @Step("The response body should contain an error message not found")
     public void shouldResponseBodyErrorMessageNotFound() {

@@ -83,9 +83,9 @@ public class PutEventSteps {
     public void receiveStatusShouldEqualCode404ForUpdateEvent() {
         putEvents.receiveStatusShouldEqualCode404ForUpdateEvent();
     }
-    @Then("The response should contain an error message indicating that bad request")
-    public void responseShouldContainErrorMessageIsBadRequest() {
-        putEvents.responseShouldContainErrorMessageIsBadRequest();
+    @Then("The response should contain an error message indicating that not found")
+    public void responseShouldContainErrorMessageIsNotFoundForEvents() {
+        putEvents.responseShouldContainErrorMessageIsNotFoundForEvents();
     }
 
 }

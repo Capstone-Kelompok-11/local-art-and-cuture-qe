@@ -48,15 +48,15 @@
         "description": {
           "$ref": "#/definitions/DescriptionUnion"
         },
-        "startTime": {
+        "start_time": {
           "type": "string",
           "format": "date-time"
         },
-        "endTime": {
+        "end_time": {
           "type": "string",
           "format": "date-time"
         },
-        "eventId": {
+        "event_id": {
           "type": "integer"
         },
         "event": {
@@ -65,14 +65,14 @@
       },
       "required": [
         "description",
-        "endTime",
+        "end_time",
         "event",
-        "eventId",
+        "event_id",
         "id",
         "name",
         "price",
         "qty",
-        "startTime",
+        "start_time",
         "type"
       ],
       "title": "Datum"
@@ -84,39 +84,39 @@
         "id": {
           "type": "integer"
         },
-        "fromDate": {
+        "from_date": {
           "type": "string",
           "format": "date-time"
         },
-        "toDate": {
+        "to_date": {
           "type": "string",
           "format": "date-time"
         },
-        "eventName": {
+        "event_name": {
           "$ref": "#/definitions/EventName"
         },
-        "eventDescription": {
+        "event_description": {
           "$ref": "#/definitions/EventDescription"
         },
-        "addressId": {
+        "address_id": {
           "type": "null"
         },
-        "creatorId": {
+        "creator_id": {
           "type": "integer"
         },
-        "categoryId": {
+        "category_id": {
           "type": "integer"
         }
       },
       "required": [
-        "addressId",
-        "categoryId",
-        "creatorId",
-        "eventDescription",
-        "eventName",
-        "fromDate",
+        "address_id",
+        "category_id",
+        "creator_id",
+        "event_description",
+        "event_name",
+        "from_date",
         "id",
-        "toDate"
+        "to_date"
       ],
       "title": "Event"
     },

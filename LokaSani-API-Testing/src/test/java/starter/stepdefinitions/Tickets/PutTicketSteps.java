@@ -68,10 +68,13 @@ public class PutTicketSteps {
     @When("I send a request PUT request with invalid endpoint")
     public void sendPUTRequestUpdateTicketWithInvalidEndpoint() {
         putTickets.sendPUTRequestUpdateTicketWithInvalidEndpoint();
+    } @When("I should receive a status code of 404 for update ticket")
+    public void receiveStatusCode404ForUpdateTicket() {
+        putTickets.receiveStatusCode404ForUpdateTicket();
     }
-    @Then("I should receive an error message indicating that bad request")
-    public void receiveMessageErrorThatBadRequest() {
-        putTickets.receiveMessageErrorThatBadRequest();
+    @Then("I should receive an error message indicating that not found")
+    public void receiveMessageErrorThatNotFound() {
+        putTickets.receiveMessageErrorThatNotFound();
     }
 
 }

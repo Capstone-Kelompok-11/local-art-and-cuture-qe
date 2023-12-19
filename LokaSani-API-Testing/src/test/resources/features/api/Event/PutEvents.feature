@@ -32,11 +32,6 @@ Feature: PUT Events
     Given I set invalid endpoint API for update event with invalid event URL
     When I send a request PUT request to update a date with invalid event URL
     And I should receive a 404 code for update event with invalid url
-    Then The response should contain an error message indicating that bad request
-#
-#  Scenario:  Empty Request Body
-#    Given I set API endpoint for update event with invalid event ID
-#    When  I send a empty request body PUT request to update a date with invalid event ID
-#    And I should receive a 404 code
-#    Then The response should contain an error message indicating that the event ID is not found
+    Then The response should contain an error message indicating that not found
+
 

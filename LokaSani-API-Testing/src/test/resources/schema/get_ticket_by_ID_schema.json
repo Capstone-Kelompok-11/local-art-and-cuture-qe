@@ -13,7 +13,10 @@
           "type": "string"
         },
         "data": {
-          "$ref": "#/definitions/Data"
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
         }
       },
       "required": [
@@ -23,7 +26,7 @@
       ],
       "title": "Welcome"
     },
-    "Data": {
+    "Datum": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -31,7 +34,7 @@
           "type": "integer"
         },
         "type": {
-          "type": "string"
+          "$ref": "#/definitions/Type"
         },
         "price": {
           "type": "integer"
@@ -40,20 +43,20 @@
           "type": "integer"
         },
         "name": {
-          "type": "string"
+          "$ref": "#/definitions/Name"
         },
         "description": {
-          "type": "string"
+          "$ref": "#/definitions/DescriptionUnion"
         },
-        "startTime": {
+        "start_time": {
           "type": "string",
           "format": "date-time"
         },
-        "endTime": {
+        "end_time": {
           "type": "string",
           "format": "date-time"
         },
-        "eventId": {
+        "event_id": {
           "type": "integer"
         },
         "event": {
@@ -62,17 +65,17 @@
       },
       "required": [
         "description",
-        "endTime",
+        "end_time",
         "event",
-        "eventId",
+        "event_id",
         "id",
         "name",
         "price",
         "qty",
-        "startTime",
+        "start_time",
         "type"
       ],
-      "title": "Data"
+      "title": "Datum"
     },
     "Event": {
       "type": "object",
@@ -81,41 +84,94 @@
         "id": {
           "type": "integer"
         },
-        "fromDate": {
+        "from_date": {
           "type": "string",
           "format": "date-time"
         },
-        "toDate": {
+        "to_date": {
           "type": "string",
           "format": "date-time"
         },
-        "eventName": {
-          "type": "string"
+        "event_name": {
+          "$ref": "#/definitions/EventName"
         },
-        "eventDescription": {
-          "type": "string"
+        "event_description": {
+          "$ref": "#/definitions/EventDescription"
         },
-        "addressId": {
+        "address_id": {
           "type": "null"
         },
-        "creatorId": {
+        "creator_id": {
           "type": "integer"
         },
-        "categoryId": {
+        "category_id": {
           "type": "integer"
         }
       },
       "required": [
-        "addressId",
-        "categoryId",
-        "creatorId",
-        "eventDescription",
-        "eventName",
-        "fromDate",
+        "address_id",
+        "category_id",
+        "creator_id",
+        "event_description",
+        "event_name",
+        "from_date",
         "id",
-        "toDate"
+        "to_date"
       ],
       "title": "Event"
+    },
+    "DescriptionUnion": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "$ref": "#/definitions/DescriptionEnum"
+        }
+      ],
+      "title": "DescriptionUnion"
+    },
+    "DescriptionEnum": {
+      "type": "string",
+      "enum": [
+        "",
+        "this is band noah",
+        "konser jkt48"
+      ],
+      "title": "DescriptionEnum"
+    },
+    "EventDescription": {
+      "type": "string",
+      "enum": [
+        "This is taylor swift"
+      ],
+      "title": "EventDescription"
+    },
+    "EventName": {
+      "type": "string",
+      "enum": [
+        "Taylor Swift"
+      ],
+      "title": "EventName"
+    },
+    "Name": {
+      "type": "string",
+      "enum": [
+        "",
+        "Noah",
+        "JKT48"
+      ],
+      "title": "Name"
+    },
+    "Type": {
+      "type": "string",
+      "enum": [
+        "VIP",
+        "Regular",
+        "REGULER"
+      ],
+      "title": "Type"
     }
   }
 }

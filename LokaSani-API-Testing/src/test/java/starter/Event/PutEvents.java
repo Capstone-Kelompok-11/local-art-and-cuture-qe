@@ -147,11 +147,11 @@ public class PutEvents {
     public void receiveStatusShouldEqualCode404ForUpdateEvent() {
         restAssuredThat(response -> response.statusCode(404));
     }
-    @Step("The response should contain an error message indicating that bad request")
-    public void responseShouldContainErrorMessageIsBadRequest() {
+    @Step("The response should contain an error message indicating that not found")
+    public void responseShouldContainErrorMessageIsNotFoundForEvents() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
         String schema = helper.getResponseSchema(JsonSchema.INVALID_URL_UPDATE_EVENT_SCHEMA);
-        restAssuredThat(response -> response.body("'message'",is("missing or malformed jwt")));
+         restAssuredThat(response -> response.body("'message'",is("Not Found")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

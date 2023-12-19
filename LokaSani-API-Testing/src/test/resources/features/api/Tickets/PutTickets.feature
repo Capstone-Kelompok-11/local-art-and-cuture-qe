@@ -31,6 +31,6 @@ Feature: PUT Tickets
   Scenario: Can not update tickets with invalid endpoint API
     Given I set invalid API endpoint tickets for update tickets
     When I send a request PUT request with invalid endpoint
-    Then I should receive a status code of 400
-    And I should receive an error message indicating that bad request
+    Then I should receive a status code of 404 for update ticket
+    And I should receive an error message indicating that not found
 

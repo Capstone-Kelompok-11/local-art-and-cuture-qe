@@ -38,5 +38,5 @@ Background:
   Scenario: As a admin I can not update product with empty fields
       Given I set API for update product with empty ID
       When I send request PUT to update product with empty ID
-      Then The response status code should be 405
-      And The response should contain an error message indicating that the update data is not allowed
+      Then The response status code should be 404
+      And The response should contain an error message indicating that the update data is not found

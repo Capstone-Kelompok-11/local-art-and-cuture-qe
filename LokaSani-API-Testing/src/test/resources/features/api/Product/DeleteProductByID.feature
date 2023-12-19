@@ -6,13 +6,13 @@ Feature:  Delete a product
   I want to delete a product by its ID
   So that I can remove it from the system
 
-  Scenario: As a admin I can delete a product by valid ID
+  Scenario: Sucessfully delete product by valid ID
     Given I set API endpoint for delete product By valid ID
     When I send a request to delete the product with the valid ID
     And I should receive a status code of 200
     Then The product was deleted successfully
 
-  Scenario: As a admin I can not delete a product with invalid or non-existent ID
+  Scenario: Can not delete a product with invalid or non-existent ID
     Given I set API endpoint for delete product By invalid ID
     When I send a request to delete the product with the invalid ID
     And I should receive a status code of 404 for invalid ID
