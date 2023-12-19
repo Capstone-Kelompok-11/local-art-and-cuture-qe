@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Dibatalkan</name>
+   <tag></tag>
+   <elementGuidId>2239cb8d-c857-4000-8ff9-3c80bf768122</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[2]/div/div/button[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>114301e9-6ae3-42e2-8892-8ab90bd87ef1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-[#253E8D] text-white px-4 py-2 rounded-lg </value>
+      <webElementGuid>9eb398f1-07a0-4f39-8746-5031206fba0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Dibatalkan</value>
+      <webElementGuid>e7cb5cf4-6bb0-459f-a242-0482f9116e30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;bg-[#F2F2F2]&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;w-full pl-[255px]&quot;]/div[@class=&quot;bg-white mx-6 mt-6 mb-2 px-6 py-2 flex justify-between rounded-md&quot;]/div[1]/div[@class=&quot;flex gap-3&quot;]/button[@class=&quot;bg-[#253E8D] text-white px-4 py-2 rounded-lg&quot;]</value>
+      <webElementGuid>5bcc9d6f-1cf2-4f17-bdcd-50f2032770c8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/div/div/button[4]</value>
+      <webElementGuid>bc062988-4c06-49b4-bb4c-cd8bf3b7c585</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tertunda'])[1]/following::button[1]</value>
+      <webElementGuid>e28bebed-d4a1-4ddd-8bf7-58feb93b3d03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dibayar'])[1]/following::button[2]</value>
+      <webElementGuid>386fa9e2-172f-45aa-96ce-cea3035f587b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ekspor'])[1]/preceding::button[1]</value>
+      <webElementGuid>2edab7f4-f40c-48cb-9781-86387e21ac2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/preceding::button[2]</value>
+      <webElementGuid>6a9cc995-b4c6-48d7-aee8-26f1d74a4891</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Dibatalkan']/parent::*</value>
+      <webElementGuid>d92b461f-fba2-4d20-aeed-069160a095df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[4]</value>
+      <webElementGuid>a7bc5361-96e7-4c8d-834c-aafe03739804</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Dibatalkan' or . = 'Dibatalkan')]</value>
+      <webElementGuid>be1d532c-40ef-4c5c-9cb6-1b5571acf3da</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

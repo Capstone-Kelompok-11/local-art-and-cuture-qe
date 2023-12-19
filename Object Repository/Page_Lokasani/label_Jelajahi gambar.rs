@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Jelajahi gambar</name>
+   <tag></tag>
+   <elementGuidId>9562f411-876b-4178-8c75-d7eac33b33b8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[3]/div/div[2]/div/div[2]/div/div/label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>c2a614d7-c0cb-4dfe-98f7-002f5d3643ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>upload</value>
+      <webElementGuid>6a677bb9-3c4e-4a8c-9157-2dbc7a1d69eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-[#253E8D] text-white text-sm py-2 px-4 rounded cursor-pointer border-2 border-[#253E8D]</value>
+      <webElementGuid>354b580d-574e-4ead-b4d4-4e2f10bb6f16</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jelajahi gambar</value>
+      <webElementGuid>eb0c92f3-5067-457c-8445-9e4808da7579</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;bg-[#F2F2F2]&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;w-full ml-[255px]&quot;]/div[@class=&quot;px-6 w-full flex gap-6&quot;]/div[@class=&quot;w-3/5&quot;]/div[@class=&quot;w-full&quot;]/div[@class=&quot;w-full p-6 bg-white rounded-lg mt-5&quot;]/div[@class=&quot;w-full h-fit flex flex-col items-center justify-center rounded-lg border-2 border-gray-400&quot;]/div[@class=&quot;p-8 rounded-lg text-center&quot;]/div[@class=&quot;w-full justify-center flex items-center mt-5 gap-3&quot;]/label[@class=&quot;bg-[#253E8D] text-white text-sm py-2 px-4 rounded cursor-pointer border-2 border-[#253E8D]&quot;]</value>
+      <webElementGuid>373d4742-437d-49b2-aa72-e517d183ae1a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[3]/div/div[2]/div/div[2]/div/div/label</value>
+      <webElementGuid>4fe564f3-2ae9-45dd-9fdb-e593d7cf5a2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='atau'])[1]/following::label[1]</value>
+      <webElementGuid>47e58e35-3d9a-44cb-92e9-1910e0918106</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Media'])[1]/following::label[1]</value>
+      <webElementGuid>fe4bf224-dbc1-4203-891e-ebbed07604e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Harga'])[1]/preceding::label[1]</value>
+      <webElementGuid>f209b337-8b99-4e69-936e-4972ad2691ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Harga'])[2]/preceding::label[1]</value>
+      <webElementGuid>ff3576cf-9d35-4484-821a-ffb706d40a69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Jelajahi gambar']/parent::*</value>
+      <webElementGuid>0141ab1f-982c-4783-be1c-46afa86c0e27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/label</value>
+      <webElementGuid>710d741b-fe0e-4525-bc57-6870b0a74b46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Jelajahi gambar' or . = 'Jelajahi gambar')]</value>
+      <webElementGuid>c74fda8b-a246-40cd-9cac-d1d921edda9d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
