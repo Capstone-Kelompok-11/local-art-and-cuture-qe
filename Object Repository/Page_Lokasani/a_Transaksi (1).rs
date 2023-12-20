@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Transaksi (1)</name>
+   <tag></tag>
+   <elementGuidId>29812a36-3943-43f8-8084-2f1185f1071d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[4]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>23859a3f-11cd-4b11-91a7-bd46ed2a6bc8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/adminumkm/daftartransaksi</value>
+      <webElementGuid>8b4e3ac1-2e2d-47b3-96fb-3d2a2474b6f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group</value>
+      <webElementGuid>76206dee-e09b-460f-a2ce-7628f4f6f36e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Transaksi</value>
+      <webElementGuid>dcbae08b-d362-4b13-a8f4-6e3c57f3b4b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;logo-sidebar&quot;)/div[@class=&quot;h-screen px-3 py-3 overflow-y-auto bg-[#253E8D]&quot;]/div[@class=&quot;flex flex-col space-y-[30vh]&quot;]/div[@class=&quot;mx-3&quot;]/ul[@class=&quot;space-y-3&quot;]/li[4]/a[@class=&quot;cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group&quot;]</value>
+      <webElementGuid>3620634f-c10f-4208-b23e-b0cf2f1b66f7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[4]/a</value>
+      <webElementGuid>cab73223-c423-46b4-a99d-a2800fbdee43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesanan'])[1]/following::a[1]</value>
+      <webElementGuid>063aca82-7af6-4a50-a5a1-64e0fd5a8f43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Produk'])[1]/following::a[2]</value>
+      <webElementGuid>c21833a9-ee4e-4437-b926-298f733281ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Akun'])[1]/preceding::a[1]</value>
+      <webElementGuid>76ec7026-9926-441d-bef0-16398b40af84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/adminumkm/daftartransaksi')]</value>
+      <webElementGuid>56f01a3a-b2e2-482d-8db0-189a54124487</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/a</value>
+      <webElementGuid>2669961d-fefa-496a-96c6-ef72d2cc0fbe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/adminumkm/daftartransaksi' and (text() = 'Transaksi' or . = 'Transaksi')]</value>
+      <webElementGuid>3082327a-879f-492c-a428-3d54c8002c92</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

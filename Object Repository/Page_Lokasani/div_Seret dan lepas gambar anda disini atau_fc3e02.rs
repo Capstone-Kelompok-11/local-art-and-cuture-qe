@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Seret dan lepas gambar anda disini atau_fc3e02</name>
+   <tag></tag>
+   <elementGuidId>162c9ccc-d040-40b4-8557-a524ba1afdc0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.p-8.rounded-lg.text-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[3]/div/div[2]/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5aafd7ba-ba3b-4274-b571-0f7ed80af7fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-8 rounded-lg text-center</value>
+      <webElementGuid>b0e73e58-d7af-42a6-958d-573df8422ca1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Seret dan lepas gambar anda disini atau  atauJelajahi gambar</value>
+      <webElementGuid>9bcde440-9eb9-4c88-9e01-f13164c8ce06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;bg-[#F2F2F2]&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;w-full ml-[255px]&quot;]/div[@class=&quot;px-6 w-full flex gap-6&quot;]/div[@class=&quot;w-3/5&quot;]/div[@class=&quot;w-full&quot;]/div[@class=&quot;w-full p-6 bg-white rounded-lg mt-5&quot;]/div[@class=&quot;w-full h-fit flex flex-col items-center justify-center rounded-lg border-2 border-gray-400&quot;]/div[@class=&quot;p-8 rounded-lg text-center&quot;]</value>
+      <webElementGuid>b1e2cb75-3fbe-47fc-adc5-70fa0643009b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[3]/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>41662d2d-9193-44e8-b6f9-964f213ea34c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Media'])[1]/following::div[3]</value>
+      <webElementGuid>e9e6e0fe-c69c-410b-9167-155faab6a681</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patung kuda yang dibuat dengan teknologi 3D Printing terkini. Dengan detail sempurna.'])[1]/following::div[7]</value>
+      <webElementGuid>8933b65b-6d18-46bc-a09e-148e6abb9195</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>fdb67203-bd82-4028-81e0-a38cc5659b06</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Seret dan lepas gambar anda disini atau  atauJelajahi gambar' or . = 'Seret dan lepas gambar anda disini atau  atauJelajahi gambar')]</value>
+      <webElementGuid>aad36921-7c07-479b-8ee5-efb7b20e3f7f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

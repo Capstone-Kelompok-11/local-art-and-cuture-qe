@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Semua</name>
+   <tag></tag>
+   <elementGuidId>c64a088a-ca71-481a-8cf0-f253d6dbab3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[2]/div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>0bff1809-fd0e-4486-8d29-8f25f629bf0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-[#253E8D] text-white px-4 py-2 rounded-lg bg-blue-600</value>
+      <webElementGuid>aec1de69-ecab-4b7d-b62e-b0ae5ff66892</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Semua</value>
+      <webElementGuid>b843ebe4-df55-456b-8ecd-cff669db2cde</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;bg-[#F2F2F2]&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;w-full pl-[255px]&quot;]/div[@class=&quot;bg-white mx-6 mt-6 mb-2 px-6 py-2 flex justify-between rounded-md&quot;]/div[1]/div[@class=&quot;flex gap-3&quot;]/button[@class=&quot;bg-[#253E8D] text-white px-4 py-2 rounded-lg bg-blue-600&quot;]</value>
+      <webElementGuid>4aa154f6-133f-4474-bb9e-5a9eead335b8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/div/div/button</value>
+      <webElementGuid>978ec0fc-87de-4af6-90ee-a1f1e1661f89</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daftar Transaksi'])[1]/following::button[1]</value>
+      <webElementGuid>9e87e5b4-583c-4350-9ad1-4afdd742581d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::button[1]</value>
+      <webElementGuid>50e2f0c5-39bf-463c-afd8-be2b5080cf83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dibayar'])[1]/preceding::button[1]</value>
+      <webElementGuid>1a0146c8-fa2b-4b89-9878-8788a357f799</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tertunda'])[1]/preceding::button[2]</value>
+      <webElementGuid>44b2450b-1009-4c4e-a8a1-0cdd3ff13deb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Semua']/parent::*</value>
+      <webElementGuid>eb1d2923-f1bd-42ac-a8d2-1d44afee98d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/button</value>
+      <webElementGuid>b6af1f16-4b3a-4d53-b3f3-ac1a03a3272c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Semua' or . = 'Semua')]</value>
+      <webElementGuid>6956f918-6d38-4f97-9017-a8d0617f2697</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
