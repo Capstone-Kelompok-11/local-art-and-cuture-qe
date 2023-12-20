@@ -19,15 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://lokasani.vercel.app/adminUMKM')
+WebUI.navigateToUrl('https://lokasani.vercel.app/adminevent')
 
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/span_Produk'))
+WebUI.click(findTestObject('Object Repository/Page_Lokasani/a_My Event'))
 
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/svg_handmade_MuiSvgIcon-root MuiSvgIcon-fon_82c4e4'))
+WebUI.click(findTestObject('Object Repository/Page_Lokasani/span_Event Aktif'))
 
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_Yes, delete it'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_OK'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_Lokasani/svg_Lunas_MuiSvgIcon-root MuiSvgIcon-fontSi_da3726'))
 

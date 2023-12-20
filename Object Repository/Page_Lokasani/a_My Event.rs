@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_My Event</name>
+   <tag></tag>
+   <elementGuidId>eae59496-7ef1-4312-91a6-12e264951f6f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6463ea5a-2e1f-4fad-b3aa-0ddf232b1233</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group</value>
+      <webElementGuid>adfbe1e6-36ae-438f-945f-29c5d979b5a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My Event</value>
+      <webElementGuid>630f836b-119c-4721-8212-b250448300ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;logo-sidebar&quot;)/div[@class=&quot;h-screen px-3 py-4 overflow-y-auto bg-[#253E8D]&quot;]/div[@class=&quot;flex flex-col space-y-[15vh]&quot;]/div[@class=&quot;mx-3&quot;]/ul[@class=&quot;space-y-1&quot;]/li[2]/a[@class=&quot;cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group&quot;]</value>
+      <webElementGuid>90a85c08-0ab9-4d6e-997d-ffd014e833f8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[2]/a</value>
+      <webElementGuid>4015804a-7e0a-4c5e-b708-4bc28d33989f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[1]</value>
+      <webElementGuid>69237568-ef88-46a5-b328-66b25c36fcf3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+ Add New Event'])[1]/following::a[2]</value>
+      <webElementGuid>74a1c794-9de8-4e42-9f83-e0bb6d3a1f5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tambah Event Baru'])[1]/preceding::a[1]</value>
+      <webElementGuid>61264d77-99dc-4994-b956-283914c917d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>4b621e29-78a5-4c10-9100-3d25934173fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'My Event' or . = 'My Event')]</value>
+      <webElementGuid>538ceb82-7ddb-463e-bf4b-7b3bff067465</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

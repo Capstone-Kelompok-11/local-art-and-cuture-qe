@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Produk</name>
+   <tag></tag>
+   <elementGuidId>bbd9cccd-ec25-487b-ad85-3e31cab481c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c20021bb-aa48-479f-8e05-51ca33d0e1ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/adminumkm/daftarproduct</value>
+      <webElementGuid>f0763fe5-e55a-4a2b-b689-3379b35175a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group</value>
+      <webElementGuid>4f00246b-68ff-42a5-b5a1-4f7cb0fc0e76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Produk</value>
+      <webElementGuid>65e2a172-f9a8-49b0-a62e-6ab0324f8208</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;logo-sidebar&quot;)/div[@class=&quot;h-screen px-3 py-3 overflow-y-auto bg-[#253E8D]&quot;]/div[@class=&quot;flex flex-col space-y-[30vh]&quot;]/div[@class=&quot;mx-3&quot;]/ul[@class=&quot;space-y-3&quot;]/li[2]/a[@class=&quot;cursor-pointer text-sm  flex items-center px-2 py-1 rounded-sm text-white hover:bg-gray-700 group&quot;]</value>
+      <webElementGuid>cb571b5e-b839-4490-b86a-e76c6c437dd1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='logo-sidebar']/div/div[2]/div/ul/li[2]/a</value>
+      <webElementGuid>8a00b7fc-4730-4afc-b957-e1454ab50490</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[1]</value>
+      <webElementGuid>5476ebb0-9ebd-4587-8fe2-891359c215fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tambahkan Produk'])[1]/following::a[2]</value>
+      <webElementGuid>023beb75-bffb-4801-ac1c-53ad3f0239e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesanan'])[1]/preceding::a[1]</value>
+      <webElementGuid>f2e63ac9-4e1e-49ee-8647-7cddb3d35cd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/adminumkm/daftarproduct')]</value>
+      <webElementGuid>93bb78a5-f563-4e01-8461-74b011119ddd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>281a59a6-e093-40dc-9e3a-99e4272965a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/adminumkm/daftarproduct' and (text() = 'Produk' or . = 'Produk')]</value>
+      <webElementGuid>cef989f1-37ac-4165-afb9-c2b0ae5898e6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

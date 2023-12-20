@@ -33,7 +33,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Lokasani/input_Jumlah Produ
 
 WebUI.setText(findTestObject('Object Repository/Page_Lokasani/input_Harga_price'), '342000')
 
-WebUI.setText(findTestObject('Object Repository/Page_Lokasani/textarea_Patung kuda yang dibuat dengan tek_d52c7f_1'), 'Patung kuda yang dibuat dengan teknologi 3D Printing terkini. Dengan detail sempurna.')
+WebUI.setText(findTestObject('Object Repository/Page_Lokasani/textarea_Patung kuda yang dibuat dengan tek_d52c7f_1'), 'Patung kuda yang dibuat dengan teknologi 3D Printing terkini. Dengan detail sempurna tanpa cela.')
 
 // WebUI.uploadFile(findTestObject('Object Repository/Page_Lokasani/div_Seret dan lepas gambar anda disini atau_fc3e02'), 'C:\\Users\\User\\Pictures\\cbe3243d4afad51d9c7e9570526e83ff79f1862e_449_599_48642.jpeg')
 WebUI.uploadFile(findTestObject('Object Repository/Page_Lokasani/label_Jelajahi gambar'), 'C:\\Users\\User\\Pictures\\cbe3243d4afad51d9c7e9570526e83ff79f1862e_449_599_48642.jpeg')

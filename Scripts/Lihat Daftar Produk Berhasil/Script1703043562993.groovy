@@ -21,13 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://lokasani.vercel.app/adminUMKM')
 
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/span_Produk'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/svg_handmade_MuiSvgIcon-root MuiSvgIcon-fon_82c4e4'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_Yes, delete it'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_OK'))
+WebUI.click(findTestObject('Object Repository/Page_Lokasani/a_Produk'))
 
 WebUI.closeBrowser()
 

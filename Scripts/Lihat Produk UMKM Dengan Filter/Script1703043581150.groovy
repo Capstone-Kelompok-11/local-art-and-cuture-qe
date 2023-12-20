@@ -17,17 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://lokasani.vercel.app/adminUMKM')
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/span_Produk'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/svg_handmade_MuiSvgIcon-root MuiSvgIcon-fon_82c4e4'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_Yes, delete it'))
-
-WebUI.click(findTestObject('Object Repository/Page_Lokasani/button_OK'))
-
-WebUI.closeBrowser()
-
