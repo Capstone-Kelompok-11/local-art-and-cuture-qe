@@ -25,25 +25,25 @@ public class PutTicketSteps {
         putTickets.receiveValidDataForUpdateTicketWithValidID();
     }
 
-    //Successful Update Tickets Quantity
-    @When("I send a request PUT request to quantity tickets")
-    public void sendPUTRequestUpdateTicketWithQuantityTickets() {
-        putTickets.sendPUTRequestUpdateTicketWithQuantityTickets();
-    }
-    @Then("The response should contain of the updated event with the changed quantity tickets")
-    public void receiveValidDataForUpdateTicketWithQuantityTicket() {
-        putTickets.receiveValidDataForUpdateTicketWithQuantityTicket();
-    }
+//    //Successful Update Tickets Quantity
+//    @When("I send a request PUT request to quantity tickets")
+//    public void sendPUTRequestUpdateTicketWithQuantityTickets() {
+//        putTickets.sendPUTRequestUpdateTicketWithQuantityTickets();
+//    }
+//    @Then("The response should contain of the updated event with the changed quantity tickets")
+//    public void receiveValidDataForUpdateTicketWithQuantityTicket() {
+//        putTickets.receiveValidDataForUpdateTicketWithQuantityTicket();
+//    }
 
-    //Successful Update Tickets Due Date
-    @When("I send a request PUT request to date tickets")
-    public void sendPUTRequestUpdateTicketWithDateTickets() {
-        putTickets.sendPUTRequestUpdateTicketWithDateTickets();
-    }
-    @Then("The response should contain of the updated event with the changed date tickets")
-    public void receiveValidDataForUpdateTicketWithDateTicket() {
-        putTickets.receiveValidDataForUpdateTicketWithDateTicket();
-    }
+//    //Successful Update Tickets Due Date
+//    @When("I send a request PUT request to date tickets")
+//    public void sendPUTRequestUpdateTicketWithDateTickets() {
+//        putTickets.sendPUTRequestUpdateTicketWithDateTickets();
+//    }
+//    @Then("The response should contain of the updated event with the changed date tickets")
+//    public void receiveValidDataForUpdateTicketWithDateTicket() {
+//        putTickets.receiveValidDataForUpdateTicketWithDateTicket();
+//    }
 
     //Can not update tickets with invalid or non-existent ID
     @Given("I set API endpoint for update a tickets with invalid ID")

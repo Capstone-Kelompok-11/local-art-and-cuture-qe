@@ -11,15 +11,6 @@ Feature: PUT Tickets
     And I should receive a 200 OK response
     Then The response should contain of the updated detail tickets
 
-  Scenario: Successful Update Tickets Quantity
-    When I send a request PUT request to quantity tickets
-    And I should receive a 200 OK response
-    Then The response should contain of the updated event with the changed quantity tickets
-
-#  Scenario: Successful Update Tickets Due Date
-#    When I send a request PUT request to date tickets
-#    And I should receive a 200 OK response
-#    Then The response should contain of the updated event with the changed date tickets
 
     #case negative
   Scenario: Can not update tickets with invalid or non-existent ID

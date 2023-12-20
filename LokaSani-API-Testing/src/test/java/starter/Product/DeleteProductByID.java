@@ -29,7 +29,7 @@ public class DeleteProductByID {
 
         @Step("I should receive a status code of 200")
     public void receiveStatusCode200ForDeleteProduct(){
-        restAssuredThat(response -> response.statusCode(500));
+        restAssuredThat(response -> response.statusCode(200));
     }
     @Step("The product was deleted successfully")
     public void receiveSuccessfullyMessage() {
@@ -47,7 +47,7 @@ public class DeleteProductByID {
     }
     @Step("I should receive a status code of 404")
     public void responseStatusCode404ForGetProductByID(){
-        restAssuredThat(response-> response.statusCode(500));
+        restAssuredThat(response-> response.statusCode(404));
     }
     @Step("The product fails to be deleted and an error message appears that product data not found")
     public void receiveMessageErrorShouldIndicatePageNotFound() {

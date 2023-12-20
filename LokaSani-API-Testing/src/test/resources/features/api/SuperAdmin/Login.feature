@@ -1,5 +1,5 @@
 @login
-Feature: Login
+Feature: Login Admin
   As a user
   I want to login
   So that I can manage users data
@@ -7,7 +7,7 @@ Feature: Login
   Background:
     Given I set API endpoint for login
 
-  Scenario Outline: As a user I can login with valid credentials
+  Scenario Outline: Sucessfully login admin with valid credentials
     When I send request to login with valid email "<email>" and valid password "<password>"
     Then I receive status code 200
     And I receive valid data for login
@@ -15,7 +15,7 @@ Feature: Login
       | email                   | password  |
       | caron.nolan@example.com | fjwvp4m3l |
 
-  Scenario Outline: As a user I can not login with unregistered credentials
+  Scenario Outline: Can not login with unregistered credentials
     When I send request to login with unregistered email "<email>" and valid password "<password>"
     Then I receive status code 404
     And I receive message error

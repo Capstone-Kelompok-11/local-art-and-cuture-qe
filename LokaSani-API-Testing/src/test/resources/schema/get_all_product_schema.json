@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$ref": "#/definitions/Response",
+  "$ref": "#/definitions/Welcome",
   "definitions": {
-    "Response": {
+    "Welcome": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -21,7 +21,7 @@
         "message",
         "status"
       ],
-      "title": "Response"
+      "title": "Welcome"
     },
     "Data": {
       "type": "object",
@@ -182,7 +182,7 @@
     "CategoryEnum": {
       "type": "string",
       "enum": [
-        "Clothes"
+        "Food"
       ],
       "title": "CategoryEnum"
     },
